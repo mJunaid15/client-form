@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="form.css">
+
+    <!-- ------------------bb5 cdn------------------------ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <!-- ------------------bb5 cdn------------------------ -->
+
+    <!-- ------------------fontawesome cdn------------------------ -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- ------------------fontawesome cdn------------------------ -->
+    <script src="  https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="  https://unpkg.com/html2canvas@1.0.0-rc.5/dist/html2canvas.js"></script>
+    <title>Form-2</title>
+
+
+</head>
+
+<body>
+
+
+    <div id="divIdToPrint">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/output-onlinepngtools.png " crossorigin="anonymous" alt="img"
+                        class="img-fluid logo"></a>
+
+
+            </div>
+        </nav>
+
+        <div class="container py-5" id="">
+            <h1 class="heading mt-3 py-3" id="">FICHE RECAPITULATTIVE DELA MARQUE </h1>
+            <div class="row mt-3">
+                <div class="col-12 col-md-6 col-lg-6 ">
+                    <div class="imgbox">
+                        <img src="img/output-onlinepngtools.png" style="width: 200px !important; height: 200px !important;" crossorigin="anonymous" class="">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 shadow-sm">
+                    <div>
+                        <p class="infotext"> Numrio de la marque : <span> dynamic here</span></p>
+                    </div>
+                    <div>
+                        <p class="infotext"> Nam dela marque : <span> dynamic here</span></p>
+                    </div>
+                    <div>
+                        <p class="infotext"> Date de depot : <span> dynamic here</span></p>
+                    </div>
+                    <div>
+                        <p class="infotext"> Date d'expiration : <span> dynamic here</span></p>
+                    </div>
+                    <div>
+                        <p class="infotext"> Etat de publication : <span> dynamic here</span></p>
+                    </div>
+                    <div>
+                        <p class="infotext"> Type de la marque : <span> dynamic here</span></p>
+                    </div>
+                    <div>
+                        <p class="infotext"> Coleour: <span> dynamic here</span></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-12 shadow-sm">
+                    <div class="">
+                        <div>
+                            <p class="infotext"> Mandatire : <span> dynamic here</span></p>
+                        </div>
+                        <div>
+                            <p class="infotext"> Loi : <span> dynamic here</span></p>
+                        </div>
+                        <div>
+                            <p class="infotext"> Titulaire : <span> dynamic here</span></p>
+                        </div>
+                        <div>
+                            <p class="infotext"> Addresse da titulaire : <span> dynamic here</span></p>
+                        </div>
+                        <div>
+                            <p class="infotext"> Pays : <span> dynamic here</span></p>
+                        </div>
+                        <div>
+                            <p class="infotext"> Class(s) de Nice : <span> ( Recapitulatif des clases de Nice)</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p class="infotext"> Coleour: <span> dynamic here</span></p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-12 col-md-4 col-lg-4 ">
+                    <div class="classesDIv shadow-sm">
+                        <h5>classes(s)</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-8 ">
+                    <div class="productDiv shadow-sm">
+                        <h5>Produit(s)et/ouservice(S)designe(S)</h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class=" d-flex justify-content-between  text-start">
+                <h5 class="dateDivtext">(date dimpression ou de tetechargement du jour)</h5>
+                <h5 class="dateDivtext">page 1/1</h5>
+            </div>
+        </div>
+
+        <!-- <button onclick="makePDF()">Dowload PDF</button> -->
+
+    </div>
+
+
+
+    <script>
+        const input = document.getElementById('divIdToPrint');
+
+        html2canvas(input)
+            .then((canvas) => {
+                const imgData = canvas.toDataURL('image/png');
+                var imgWidth = 210;
+                var pageHeight = 295;
+                var imgHeight = canvas.height * imgWidth / canvas.width;
+                var heightLeft = imgHeight;
+                const pdf = new jsPDF("p", "mm");
+
+                var position = 0;
+
+                pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+                heightLeft -= pageHeight;
+
+                while (heightLeft >= 0) {
+                    position = heightLeft - imgHeight;
+                    doc.addPage();
+                    doc.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+                    heightLeft -= pageHeight;
+                }
+                pdf.save("download.pdf");
+                // console.log(canvas);
+            });
+
+
+
+
+
+        //   const divMain = ;
+        // function generatePDF() {
+
+        //     var imgData;
+        //     html2canvas(document.getElementById("test"), {
+        //         useCORS: true,
+        //         onrendered: function (canvas) {
+        //             imgData = canvas.toDataURL("image/png");
+        //             const doc = new jsPDF("p", "pt", "a4");
+        //             doc.addImage(imgData, "PNG", 1, 40, 180, 160);
+        //             doc.save("jd-script.pdf");
+        //             window.open(imgData)
+        //         }
+        //     })
+
+
+        // var doc = new jsPDF(); //create jsPDF object
+        // doc.fromHTML(), // page element which you want to print as PDF
+        //     15,
+        //     15, {
+        //         'width': 170 //set width
+        //     },
+        //     doc.addImage("examples/images/Octonyan.jpg", "JPEG", 15, 40, 180, 180),
+
+        //     function (a) {
+        //         doc.save("HTML2PDF.pdf"); // save file name as HTML2PDF.pdf
+        //     });
+        // }
+    </script>
+
+
+    <!-- ------------------bb5 js cdn------------------------ -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <!-- ------------------bb5 js cdn------------------------ -->
+
+</body>
+
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+
+    <!-- ------------------bb5 cdn------------------------ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <!-- ------------------bb5 cdn------------------------ -->
+
+    <!-- ------------------fontawesome cdn------------------------ -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- ------------------fontawesome cdn------------------------ -->
+    <title>Form</title>
+
+
+</head>
+
+<body>
+
+
+    <section>
+
+        <div class="container mt-5 ">
+            <div class="row mt-3">
+                <div class="col-12">
+
+
+                    <div class="inputField shadow-sm ">
+                        <span class="iconsInput">
+                            <img src="img/searchIcon.png" alt="img" class="img-fluid">
+                        </span>
+                        <input type="email" class="form-control inputcus" placeholder="Search Chat"
+                            id="exampleInputPassword1">
+
+                        <span class="checkbox">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                            </label>
+
+                        </span>
+
+                    </div>
+
+                    <!-- <div class="mb-3 inputField">
+                        <input type="text" class="form-control inputcus" placeholder="Enter your message"
+                            id="exampleInputPassword1" />
+                        <span class="mediaInput">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Default checkbox
+                                </label>
+                            </div>
+
+                        </span>
+
+
+                    </div> -->
+
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 col-md-6 col-lg-6">
+
+
+                    <div class="inputField  shadow-sm">
+                        <span class="iconsInput">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <input type="email" class="form-control inputcus" placeholder="Search Chat"
+                            id="exampleInputPassword1">
+
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+
+
+                    <div class="inputField  shadow-sm">
+                        <span class="iconsInput">
+                            <i class="far fa-image"></i>
+                        </span>
+                        <input type="email" class="form-control inputcus" placeholder="Choose image"
+                            id="exampleInputPassword1">
+
+                        <span class="checkbox">
+                            <label for="file">
+                                <a class="btn btn-primary">Choose image</a>
+                                <input type="file" id="file" style="display: none" name="image"
+                                    accept="image/gif,image/jpeg,image/jpg,image/png" multiple=""
+                                    data-original-title="upload photos" />
+                            </label>
+
+                        </span>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="collapseDiv shadow-sm">
+                <p>
+
+                    <button class="btn btn-success" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Advance search
+                    </button>
+                    <button class="btn btn-light" type="button" disabled>
+                        Images similariess
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <div class="container">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Deposee Apres</label>
+                                            <input type="email" class="form-control shadow-sm inputField"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div> -->
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Deposee Avant</label>
+                                            <input type="email" class="form-control shadow-sm inputField"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3 ">
+                                            <label for="exampleInputEmail1" class="form-label">Expire Apres</label>
+                                            <input type="email" class="shadow-sm form-control inputField"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div> -->
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class=" form-label">Expire Avant</label>
+                                            <input type="email" class="form-control shadow-sm inputField"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3 ">
+                                            <label for="exampleInputEmail1" class="form-label">Tittulaire </label>
+
+                                            <div class="autocomplete" style="width:100%;">
+                                                <input id="myInput" type="text" name="myCountry"
+                                                    placeholder="--Choisir le Tittulaire--"
+                                                    class="form-control shadow-sm inputField">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class=" form-label">Recherche libre
+                                                Tittulaire</label>
+                                            <input type="email" class="form-control shadow-sm inputField"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class=" form-label">Mandatire
+                                            </label>
+                                            <input type="email" class="form-control shadow-sm inputField"
+                                                id="exampleInputEmail1" placeholder="recharche par mandataire.."
+                                                aria-describedby="emailHelp">
+
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3 ">
+                                            <label for="exampleInputEmail1" class="form-label">Etat </label>
+
+                                            <div class="autocomplete" style="width:100%;">
+                                                <input id="myInput" type="text" name="myCountry"
+                                                    placeholder="Irrecevable" class="form-control shadow-sm inputField">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3 ">
+                                            <label for="exampleInputEmail1" class="form-label">Type </label>
+
+                                            <div class="autocomplete" style="width:100%;">
+                                                <input id="myInput" type="text" name="myCountry"
+                                                    placeholder="--Choisir le type de la marque--"
+                                                    class="form-control shadow-sm inputField">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class=" form-label">Class de nice
+                                            </label>
+                                            <input type="email" class="form-control shadow-sm inputField"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3 ">
+                                            <label for="exampleInputEmail1" class="form-label">Catalogue </label>
+
+                                            <div class="autocomplete" style="width:100%;">
+                                                <input id="myInput" type="text" name="myCountry"
+                                                    placeholder="--Choisir le Catalogue--"
+                                                    class="form-control shadow-sm inputField">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3 ">
+                                            <label for="exampleInputEmail1" class="form-label">Loi </label>
+
+                                            <div class="autocomplete" style="width:100%;">
+                                                <input id="myInput" type="text" name="myCountry"
+                                                    placeholder="--Choisir le loi--"
+                                                    class="form-control shadow-sm inputField">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-12 col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Couleur</label>
+                                            <input type="email" class="form-control shadow-sm inputField"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-12 col-lg-12">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Addres</label>
+                                            <input type="email" placeholder="rechere par addrese"
+                                                class="form-control shadow-sm inputField" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Ville</label>
+                                            <input type="email" class="form-control shadow-sm inputField"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <!-- <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div> -->
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Pays</label>
+                                            <input type="email" class="form-control shadow-sm inputField"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-12 col-lg-12">
+                                        <label for="" class="form-label">Methode Rechure images</label>
+
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-4 col-lg-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                CEDD
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                cvSURf
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                FCT + detGRnd
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                CEDD
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                cvSURf
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                FCT + detGRnd
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                JCD
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2">
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                FCTH + detGRnd
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row my-3">
+                                    <div class="col-12 col-md-12 col-lg-12">
+                                        <div class="mb-3">
+                                            <div class="row g-3 align-items-center">
+                                                <div class="col-12">
+                                                    <label class="form-label" for="languages1-id">Champs
+                                                        visible:</label>
+                                                    <div id="languages1-id"></div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="row my-3">
+                                    <div class="col-12 col-md-12 col-lg-12">
+
+                                        <button class="btn btn-light" type="button" disabled>
+                                            Images similariess
+                                        </button>
+                                        <button class="btn btn-success" type="button">
+                                            Rechercher
+                                        </button>
+                                       
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- ------------------bb5 js cdn------------------------ -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <!-- ------------------bb5 js cdn------------------------ -->
+    <script src="BsMultiSelect.js"></script>
+    <script src="form.js"></script>
+
+</body>
+
+</html>

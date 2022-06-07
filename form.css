@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+    /* font-family: 'Comic Neue', cursive; */
+font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inputField {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px dotted rgba(0, 0, 0, 0.11) !important;
+}
+.iconsInput {
+  position: absolute;
+  left: 1.5%;
+}
+.iconcolor {
+  color: #bae0ea;
+  font-size: 17px;
+}
+.inputcus {
+  padding: 11px 35px !important;
+  border: none !important;
+  border-radius: 21px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+.checkbox {
+  position: absolute;
+  right: 1.5%;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #212529 !important;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: none !important;
+}
+.collapseDiv {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #86b6fe17;
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+.form-inline .dashboardcode-bsmultiselect .custom-control {
+  /* IE11 */
+  justify-content: flex-start;
+}
+
+/* auto complete dropdown ------------------------------ ---------------------*/
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+/* auto complete dropdown ------------------------------ ---------------------*/
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.95em !important;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff !important;
+  background: #267dfd;
+  margin-right: 9px !important;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25 rem;
+}
+.btn-close {
+  margin-left: 10px;
+  padding: 0.25em 0.25em !important;
+  color: #f8f9fa !important;
+}
+
+/* 2nd page css start ------------------------------------ */
+.logo {
+  height: 100px;
+  width: 100px;
+}
+.heading {
+  font-size: 33px;
+  font-weight: 800;
+  text-align: center;
+}
+.infotext{
+    font-size: 16px ;
+    font-weight: 500;
+    color: #212529;
+}
+.infotext span{
+    font-size: 16px ;
+    font-weight: normal;
+}
+.imgbox{
+    width: 100%;
+    height: 100%;
+    
+    border: 1px dotted rgba(0, 0, 0, 0.301) !important;
+
+}
+.classesDIv{
+    height: 80vh;
+    padding: 20px;
+}
+.classesDIv h5{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #212529;
+    text-align: center;
+}
+.productDiv{
+    height: 80vh;
+    padding: 20px;
+
+}
+.productDiv h5{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #212529;
+    text-align: center;
+}
+.dateDivtext{
+    padding: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #212529;
+
+}

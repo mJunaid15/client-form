@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rating star</title>
+
+    <!-- ------------------fontawesome cdn------------------------ -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- ------------------fontawesome cdn------- -->
+
+    <style>
+        .checked {
+            color: yellow;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h2>Star Rating</h2>
+    <span class="some-id fa fa-star" onclick="test()"></span>
+    <span class="some-id fa fa-star " ></span>
+    <span class=" some-id fa fa-star " ></span>
+    <span class=" some-id fa fa-star" ></span>
+    <span class=" some-id fa fa-star"></span>
+    <script>
+        function test() {
+            var elem = document.getElementsByClassName('some-id');
+
+            for (i = 0; i < elem.length; i++) {
+                if (elem[i].classList.contains('some-id') ) { // Check for class
+                    console.log(elem[i]);
+
+                    elem[i].classList.toggle('checked'); // Add or remove class
+
+                }
+
+            }
+
+
+
+        }
+    </script>
+</body>
+
+</html>
